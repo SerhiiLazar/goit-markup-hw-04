@@ -59,7 +59,7 @@ a {
     /* border: 2px solid tomato; */
 }
 
-/* section */
+/* section-top */
 
 .section {
     padding-top: 94px;
@@ -115,6 +115,7 @@ a {
 
 .header-list,
 .header-contact {
+    align-items: center;
     padding: 0;
     margin: 0;
 
@@ -122,6 +123,12 @@ a {
     line-height: 16px;
     letter-spacing: 0.02em;
 }
+
+.header-contact {
+    align-items: baseline;
+}
+
+
 
 .header-link.active {
     color: var(--active);
@@ -138,18 +145,37 @@ a {
 .contact-link:focus {
     color: var(--active);
     cursor: pointer;
+    fill: var(--active);
 }
 
-.contact-link,
+
 .contact-link {
     color: var(--text);
+    fill: var(--text);
 }
 
-.service {
-    align-items:center;
-    background-color: var(--brand-color);
+.contact-icon {
+    margin-right: 10px;
+}
+
+.service-top {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    /* background-color: var(--brand-color); */
+    background-image: linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ), 
+        url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .service-title {
@@ -349,7 +375,6 @@ a {
 }
 .social-list:hover .icon-social,
 .social-list:focus .icon-social {
-    background-color: var(--active);
     fill: var(--white);
 }
 
@@ -357,6 +382,15 @@ a {
     width: 20px;
     height: 20px;
     fill: var(--icons-svg);
+}
+
+/* customers */
+
+.customers-list {
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding: 0;
 }
 
 
