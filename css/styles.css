@@ -359,6 +359,14 @@ a {
     padding: 0;
 }
 
+.social-item {
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
 .social-list {
     display: flex;
     justify-content: center;
@@ -369,6 +377,7 @@ a {
     margin: 0;
     padding: 0;
 }
+
 .social-list:hover,
 .social-list:focus {
     background-color: var(--active);
@@ -386,11 +395,44 @@ a {
 
 /* customers */
 
+
 .customers-list {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin:0;
     padding: 0;
+    
+}
+
+.customers-item {
+    margin-right: 30px;
+}
+
+.customers-link {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-svg);
+    border-radius: 4px;
+    fill: var(--icons-svg);
+}
+.customers-item:last-child {
+    margin-right: 0;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+    fill: var(--active);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border-color: var(--active);
 }
 
 
@@ -401,6 +443,15 @@ a {
     padding: 60px 0;
     background-color: var(--brand-color);
 }
+
+.footer-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+.footer-about {
+    margin-right: 70px;
+}
+
 
 .footer-logotip {
     display: block;
@@ -429,6 +480,16 @@ a {
 
 }
 
+.title-social {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+
+    margin-bottom: 20px;
+}
+
 .footer-link {
     font-style: normal;
     line-height: 1.71;
@@ -437,7 +498,12 @@ a {
     color: rgba(255, 255, 255, 0.6);
     }
 
-
+.social-footer-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-icon {
+    fill: var(--white);
+}
                     /* PORTFOLIO */
 
     /* main-header */
@@ -531,11 +597,21 @@ a {
     margin-bottom: 0;
 }
 
-.content-img,
-.process-link {
+.content-img {
     display: block;
-    max-width: 370px;
+    max-width: 100%;
     height: auto;
+}
+
+.content-link {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.content-link:hover,
+.content-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .content-wrap {
